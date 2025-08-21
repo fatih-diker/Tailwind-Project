@@ -1,14 +1,89 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!-- Font Awsome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="./output.css" rel="stylesheet">
 </head>
+
 <body>
-  <h1 class="text-3xl font-bold underline text-blue-600">
-    Hello world!
-  </h1>
+
+  <!-- header -->
+  <div class="h-[85vh] bg-[url('./images/background-img-2.png')] bg-no-repeat bg-center bg-cover relative">
+
+    <nav class="container mx-auto flex items-center justify-between py-4 border-b-1 border-white">
+
+      <div class="flex items-center gap-x-8 text-white">
+        <select name="language" id="language" class="bg-transparent border-none cursor-pointer">
+          <option class="text-black" value="en" selected>ENGLISH</option>
+          <option class="text-black" value="tr">TÜRKÇE</option>
+          <option class="text-black" value="de">DEUTSCH</option>
+        </select>
+
+        <select name="currency" id="currency" class="bg-transparent border-none cursor-pointer">
+          <option class="text-black" value="usd" selected>USD</option>
+          <option class="text-black" value="tl">TL</option>
+          <option class="text-black" value="eur">EUR</option>
+        </select>
+
+        <i class="fas fa-search cursor-pointer"></i>
+      </div>
+
+      <a href="#" class="flex items-center text-black">
+        <img class="w-[60px]" src="images/logo.png" alt="Logo">
+        <span class="font-poppins text-3xl font-bold">Zamil</span>
+      </a>
+
+      <div class="flex items-center gap-x-8 text-white">
+        <a href="#" class="uppercase">Register or sign in</a>
+
+        <a href="#">
+          <i class="fa-solid fa-heart"></i>
+        </a>
+
+        <a href="#">
+          <i class="fa-solid fa-bag-shopping"></i>
+        </a>
+      </div>
+
+    </nav>
+
+    <div class="container mx-auto flex items-center justify-center gap-x-12 py-4 text-white uppercase font-bold">
+      <a href="#">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">Features</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact Us</a>
+    </div>
+
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 uppercase text-white text-center">
+
+      <h1 class="text-7xl font-bold py-4">100% PURE <br> NATURAL DRINKS</h1>
+
+      <span class="">Prevail energy is packed with natural ingredients.</span>
+
+      <div class="pt-10 font-bold">
+        <button class="cursor-pointer py-2.5 px-8 mx-2 bg-[#f65f72] rounded-4xl">Shop now</button>
+        <button class="cursor-pointer py-2.5 px-8 mx-2 rounded-4xl border-2 border-white">Shop now</button>
+      </div>
+
+    </div>
+
+  </div>
+
+
 
 </body>
+
 </html>
