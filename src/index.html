@@ -14,13 +14,30 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
     integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link href="./output.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="mb-[500px]">
 
   <!-- header -->
-  <div class="h-[85vh] bg-[url('./images/background-img-2.png')] bg-no-repeat bg-center bg-cover relative">
+  <div class="swiper h-screen w-screen relative overflow-hidden" id="swiper">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide">
+        <img src="./images/background-img.png" class="w-full h-full object-cover" alt="Slide 1">
+      </div>
+
+      <div class="swiper-slide">
+        <img src="./images/background-img-2.png" class="w-full h-full object-cover" alt="Slide 2">
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="absolute inset-0 z-20">
 
     <nav class="container mx-auto flex items-center justify-between py-4 border-b-1 border-white">
 
@@ -80,10 +97,20 @@
 
     </div>
 
+    <div class="absolute -bottom-50 left-1/2 -translate-x-1/2 flex justify-center gap-x-7">
+      <img class="h-[350px]" src="images/item-1.png" alt="">
+      <img class="h-[350px]" src="images/item-2.png" alt="">
+      <img class="h-[350px]" src="images/item-3.png" alt="">
+      <img class="h-[350px]" src="images/item-4.png" alt="">
+      <img class="h-[350px]" src="images/item-5.png" alt="">
+    </div>
+
   </div>
 
 
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./main.js"></script>
 </body>
 
 </html>
