@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8">
@@ -19,14 +19,14 @@
   <link href="./output.css" rel="stylesheet">
 </head>
 
-<body class="mb-[500px]">
+<body class="mb-[500px]" id="body">
 
   <!-- header -->
-  <div class="swiper h-screen w-screen relative overflow-hidden" id="swiper">
+  <div class="swiper h-screen w-full relative overflow-hidden mb-[350px]" id="swiper">
     <div class="swiper-wrapper">
 
       <div class="swiper-slide">
-        <img src="./images/background-img.png" class="w-full h-full object-cover" alt="Slide 1">
+        <img src="./images/background-img-2.png" class="w-full h-full object-cover" alt="Slide 1">
       </div>
 
       <div class="swiper-slide">
@@ -65,12 +65,16 @@
       <div class="flex items-center gap-x-8 text-white">
         <a href="#" class="uppercase">Register or sign in</a>
 
-        <a href="#">
+        <a href="#" class="relative">
           <i class="fa-solid fa-heart"></i>
+          <span
+            class="absolute -top-1 -right-3 w-4 h-4 rounded-full bg-[#f65f72] flex items-center justify-center text-[12px]">0</span>
         </a>
 
-        <a href="#">
+        <a href="#" class="relative">
           <i class="fa-solid fa-bag-shopping"></i>
+          <span
+            class="absolute -top-1 -right-3 w-4 h-4 rounded-full bg-[#f65f72] flex items-center justify-center text-[12px]">0</span>
         </a>
       </div>
 
@@ -91,8 +95,12 @@
       <span class="">Prevail energy is packed with natural ingredients.</span>
 
       <div class="pt-10 font-bold">
-        <button class="cursor-pointer py-2.5 px-8 mx-2 bg-[#f65f72] rounded-4xl">Shop now</button>
-        <button class="cursor-pointer py-2.5 px-8 mx-2 rounded-4xl border-2 border-white">Shop now</button>
+        <button
+          class="cursor-pointer py-2.5 px-8 mx-2 bg-[#f65f72] rounded-4xl transition-all duration-300 hover:opacity-80">Shop
+          now</button>
+        <button
+          class="cursor-pointer py-2.5 px-8 mx-2 rounded-4xl border-2 border-white transition-all duration-300 hover:opacity-80">View
+          more</button>
       </div>
 
     </div>
@@ -105,6 +113,113 @@
       <img class="h-[350px]" src="images/item-5.png" alt="">
     </div>
 
+  </div>
+
+
+  <!-- featured products -->
+  <div class="max-w-[1410px] mx-auto text-center relative">
+
+    <span class="text-[18px] text-gray-900">Welcome to the Organic world</span>
+
+    <h2 class="uppercase text-4xl text-black font-semibold my-4 relative">featured products
+
+      <span class="absolute -top-24 left-1/2 -translate-x-1/2 opacity-30"> <img class="h-48" src="images/grape sketch.png"></span>
+    </h2>
+
+    <div class="flex justify-center mt-2 mb-3">
+      <svg width="120" height="20" viewBox="0 0 150 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 10L15 0L30 10L45 0L60 10L75 0L90 10L105 0L120 10L135 0L150 10" stroke="#f65f72" stroke-width="4" />
+      </svg>
+    </div>
+
+    <span class="text-gray-700">Ullamcorper condimentum erat pretium velit at ut nunc id adeu vestibulum nibh <br>
+      urna nam consequat erat melestie lacinia rhoncus.
+    </span>
+
+    <div class="mt-10 grid grid-cols-4 gap-6">
+
+      <div class="flex flex-col items-center w-full">
+        <div class="h-[366px] p-12 bg-[#f7f7f7] flex justify-center w-full">
+          <img src="images/pear.png" alt="Organic D'Anjou Pears" class="h-full object-cover">
+        </div>
+
+        <span class="mt-3 text-sm">Organic D'Anjou Pears</span>
+        <span class="font-bold">$324.00</span>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <div class="h-[366px] p-5 bg-[#f7f7f7] flex justify-center w-full">
+          <img src="images/bok choy.png" alt="Seasonal Fruit Bundle" class="h-full object-cover">
+        </div>
+
+        <span class="mt-3 text-sm">Seasonal Fruit Bundle</span>
+        <span class="font-bold">$100.00</span>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <div class="h-[366px] p-5 bg-[#f7f7f7] flex justify-center w-full">
+          <img src="images/red and green bell pepper.png" alt="Lorigun Artdicial Bell" class="h-full object-cover">
+        </div>
+
+        <span class="mt-3 text-sm">Lorigun Artdicial Bell</span>
+        <span class="font-bold">$250.00 - $301.00</span>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <div class="h-[366px] p-6 bg-[#f7f7f7] flex justify-center w-full relative">
+          <img src="images/cherry.png" alt="Red Cherry Organic" class="h-full object-cover">
+          <span
+            class="absolute top-4 right-4 w-14 h-6 rounded-full bg-[#f65f72] flex items-center justify-center text-[12px] text-white font-extrabold">-14%</span>
+        </div>
+
+        <span class="mt-3 text-sm">Red Cherry Organic</span>
+        <span class="font-bold">$324.00 <span class="font-normal ml-1.5 text-gray-500 line-through">$375.00</span>
+        </span>
+      </div>
+
+      <div class="flex flex-col items-center w-full">
+        <div class="h-[366px] p-4 bg-[#f7f7f7] flex justify-center w-full">
+          <img src="images/orange.png" alt="Fresh Navel Orange" class="h-full object-cover">
+        </div>
+
+        <span class="mt-3 text-sm">Fresh Navel Orange</span>
+        <span class="font-bold">$244.00</span>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <div class="h-[366px] p-12 bg-[#f7f7f7] flex justify-center w-full relative">
+          <img src="images/avocado.png" alt="Avocados from Fallbrook" class="h-full object-cover">
+          <span class="absolute top-4 right-4 w-14 h-6 rounded-full bg-[#f65f72] flex items-center justify-center text-[12px] text-white font-extrabold">-12%</span>
+        </div>
+
+        <span class="mt-3 text-sm">Avocados from Fallbrook</span>
+        <span class="font-bold">$309.00 <span class="font-normal ml-1.5 text-gray-500 line-through">$352.00</span>
+        </span>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <div class="h-[366px] p-8 bg-[#f7f7f7] flex justify-center w-full">
+          <img src="images/blueberry.png" alt="Strengt Blueberry Flavor" class="h-full object-cover">
+        </div>
+
+        <span class="mt-3 text-sm">Strengt Blueberry Flavor</span>
+        <span class="font-bold">$109.00</span>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <div class="h-[366px] p-10 bg-[#f7f7f7] flex justify-center w-full">
+          <img src="images/pomegranate.png" alt="Gresorth 6 Pcs Lifelike" class="h-full object-cover">
+        </div>
+
+        <span class="mt-3 text-sm">Gresorth 6 Pcs Lifelike</span>
+        <span class="font-bold">$109.00</span>
+      </div>
+
+    </div>
+
+    <a href="#body" class="p-2 border-2 border-black rounded-full absolute top-90 -right-55">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
   </div>
 
 
